@@ -1,0 +1,42 @@
+const prescription = [
+  {
+    id: 1,
+    pills: [
+      {
+        id: 1,
+        medicine_name: "NEUROBION FORT E TABLET 30'S",
+        pills: 1,
+        taken: false,
+        intake_type: 'Before Food',
+        intake_time: 'Breakfast',
+        medicine_type: 'tablet',
+        medicine_strength: '50',
+        medicine_unit: 'g',
+      },
+      {
+        id: 2,
+        medicine_name: 'Folic Acid',
+        pills: 1,
+        taken: false,
+        intake_type: 'Before Food',
+        intake_time: 'Breakfast',
+        medicine_type: 'tablet',
+        medicine_strength: '50',
+        medicine_unit: 'g',
+      },
+      {
+        id: 3,
+        medicine_name: "NEUROBION FORT E TABLET 30'S",
+        pills: 1,
+        taken: false,
+        intake_type: 'Before Food',
+        intake_time: 'Breakfast',
+        medicine_type: 'tablet',
+        medicine_strength: '50',
+        medicine_unit: 'g',
+      },
+    ],
+    tab_name: 'Before Breakfast',
+    tab_image: '',
+  },
+];
