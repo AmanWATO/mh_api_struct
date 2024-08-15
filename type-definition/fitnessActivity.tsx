@@ -1,4 +1,4 @@
-const fitness_activity = [
+const fitness_activities = [
   {
     id: 1,
     screen_type: 'mh/confirm',
@@ -77,3 +77,41 @@ const fitness_activity = [
     },
   },
 ];
+
+interface VideoInfo {
+  id: number;
+  title: string;
+  listed_info: string[];
+}
+
+interface ExerciseDetail {
+  title: string;
+  duration: number;
+  video_info: VideoInfo[];
+  video_link: string;
+}
+
+interface FitnessActivity {
+  id: number;
+  screen_type:
+    | 'mh/confirm'
+    | 'mh/docDetail'
+    | 'mh/consent'
+    | 'mh/disclaimer'
+    | 'mh/note'
+    | 'mh/weekly-exercise';
+  title: string;
+  description?: string;
+  weeks?: number;
+  doc_name?: string;
+  doc_image?: string;
+  doc_experience?: string;
+  doc_department?: string;
+  not_suitable?: string[];
+  exercise_number?: number;
+  exercise_name?: string;
+  exercise_image?: string;
+  exercise_detail?: ExerciseDetail;
+}
+
+type FitnessActivities = FitnessActivity[];

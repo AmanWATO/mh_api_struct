@@ -1,4 +1,4 @@
-const mind_activity = [
+const mind_activities = [
   {
     id: 1,
     title: 'Body Scanning',
@@ -128,3 +128,21 @@ const mind_activity = [
     image: AppImages.mind_gif,
   },
 ];
+
+interface VideoInfo {
+  id: number;
+  title: string;
+  listed_info: string[];
+}
+
+interface MindActivity {
+  id: number;
+  title: string;
+  video_link: string;
+  duration: number;
+  video_info: VideoInfo[];
+  completed: boolean;
+  image: string;
+}
+
+type MindActivities = MindActivity[];

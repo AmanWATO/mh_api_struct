@@ -89,3 +89,30 @@ const diet_qna = [
     ],
   },
 ];
+
+interface Option {
+  id: number;
+  title: string;
+  exceptionTitle?: string;
+  exceptionQuestion?: string;
+  exepectionQuestionOption?: Option[];
+}
+
+interface Preview {
+  id: number;
+  preview_title: string;
+  preview_image: string;
+}
+
+interface DietQNAItem {
+  id: number;
+  screen_type: 'mh/wheel' | 'mh/calculate' | 'mh/multiplechoice' | 'mh/preview';
+  question?: string;
+  unit?: string;
+  options?: [number, number];
+  option?: Option[];
+  multiple_select?: boolean;
+  previews?: Preview[];
+}
+
+type DietQNA = DietQNAItem[];

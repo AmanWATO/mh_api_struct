@@ -161,3 +161,56 @@ const mh_one = [
     block: 'mh/faqs',
   },
 ];
+
+interface SliderImage {
+  id: number;
+  image: string;
+}
+
+interface Title {
+  id: number;
+  sliderID: number;
+  title: string;
+}
+
+interface Comment {
+  id: number;
+  comment: string;
+  rating: number;
+  pregnancyTime: string;
+  patient_name: string;
+  hospitalBranch: string;
+  patient_profile: string;
+}
+
+interface Include {
+  id: number;
+  title: string;
+  image: string;
+}
+
+interface Expert {
+  id: number;
+  title: string;
+  video_link: string;
+  image: string;
+}
+
+interface FAQ {
+  id: number;
+  question: string;
+  answers: string[];
+}
+
+interface MHOneItem {
+  id: number;
+  block: string;
+  mh_one_slider?: SliderImage[];
+  mh_one_titles?: Title[];
+  mh_one_comments?: Comment[];
+  mh_one_includes?: Include[];
+  mh_one_experts?: Expert[];
+  mh_one_faqs?: FAQ[];
+}
+
+type MHOne = MHOneItem[];
