@@ -106,7 +106,7 @@ interface Preview {
 
 interface DietQNAItem {
   id: number;
-  screen_type: 'mh/wheel' | 'mh/calculate' | 'mh/multiplechoice' | 'mh/preview';
+  screen_type: string;
   question?: string;
   unit?: string;
   options?: [number, number];
